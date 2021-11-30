@@ -1,0 +1,16 @@
+
+<launch>
+    <node name="tracker_node" pkg="icog_face_tracker" type="tracker_node" output="screen" >
+        <param name="show_preview" value="false"/>
+    </node>
+    <node name="listener_node" pkg="icog_face_tracker" type="listener_node" output="screen" >      
+    </node>
+    <!-- start Rosserial with Arduino Due for ranging sensor and tacterion -->
+	
+     <node name="laserRecon_node" pkg="icog_face_tracker" type="laserRecon_node" output="screen" >
+    </node>
+     <node name="trinkvorgang_node" pkg="icog_face_tracker" type="trink_node" output="screen" >      
+    </node>
+    <node name="jaco_node" pkg="icog_face_tracker" type="jaco_node" output="screen" >      
+    </node>
+</launch>

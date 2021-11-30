@@ -1,0 +1,10 @@
+<launch>
+    <include file="$(combined_system)/launch/hardware.launch"/>
+    <node name="tracker_node" pkg="icog_face_tracker" type="tracker_node" output="screen" >
+        <param name="show_preview" value="false"/>
+    </node>
+    <node name="listener_node" pkg="icog_face_tracker" type="listener_node" output="screen" >      
+    </node>
+    <node name="jaco_node" pkg="icog_face_tracker" type="jaco_node" output="screen" >      
+    </node>
+</launch>

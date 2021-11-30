@@ -1,0 +1,13 @@
+
+
+<launch>
+ <node name="tracker_node" pkg="icog_face_tracker" type="tracker_node" output="screen" >
+        <param name="show_preview" value="false"/>
+    </node>
+    <node name="listener_node" pkg="icog_face_tracker" type="listener_node" output="screen" >      
+    </node>
+    <include file="$(find mocap_qualisys)/launch/qualisys.launch">    
+    </include>
+    <node name="record_node" pkg="icog_face_tracker" type="record_node" output="screen" >      
+    </node>
+</launch>
