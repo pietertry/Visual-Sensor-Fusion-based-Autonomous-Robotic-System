@@ -1,0 +1,9 @@
+myRect face
+myPoint[] face_points
+float32 relDist_EE
+float32 relDist_EM
+float32 yaw
+float32 roll
+uint8   failed_attempts
+bool facingAway
+bool closeMouthTracking
